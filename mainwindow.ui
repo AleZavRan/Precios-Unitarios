@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>581</width>
+    <height>416</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>+PRECIOS UNITARIOS+</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/resources/img/blanco.jpg);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_mainpic">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>20</y>
+      <width>271</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>-10</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;h1&gt;&lt;font color = blue&gt;muestra&lt;/font&gt;&lt;b&gt;&lt;h1&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>80</y>
+      <width>241</width>
+      <height>251</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Costos">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>40</y>
+      <width>121</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Costos </string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>581</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionEdit"/>
+    <addaction name="actionDelete"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset>
+     <normalon>:/resources/img/new.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionEdit">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/img/edit.png</normaloff>:/resources/img/edit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Edit</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/img/delete.png</normaloff>:/resources/img/delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

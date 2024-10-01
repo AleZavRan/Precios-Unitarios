@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>img/Screenshot from 2023-06-14 00-00-15.png</file>
+        <file>img/celosia.jpg</file>
+        <file>img/blanco.jpg</file>
+        <file>img/gaspacho.jpg</file>
+        <file>img/new.png</file>
+        <file>img/edit.png</file>
+        <file>img/delete.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AlquiyDepre</class>
+ <widget class="QDialog" name="AlquiyDepre">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>677</width>
+    <height>461</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Alquileres y Depreciaciones</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>67</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1. Rentas</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>80</y>
+     <width>91</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2. Servicios</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>170</y>
+     <width>131</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3. Mantenimiento</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>270</y>
+     <width>131</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4. Depreciaciones</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_Oficinas">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>50</y>
+     <width>92</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Oficinas</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_luz">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>110</y>
+     <width>92</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Luz</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_tel">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>140</y>
+     <width>92</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Teléfono</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_eqOf">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>200</y>
+     <width>121</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Equipo oficina</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_eqTrans">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>230</y>
+     <width>151</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Equipo Transporte</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_deprEqOf">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>300</y>
+     <width>131</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Equipo oficina</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_deprEqTransp">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>330</y>
+     <width>151</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Equipo transporte</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>10</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Monto Mensual</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>20</y>
+     <width>101</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Monto Bruto</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_oficinas">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>50</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_luz">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>110</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_telefono">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>140</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_eqOficina">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>200</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_eqTransp">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>230</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_eqOficinaBr">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>200</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_eqTranspBr">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>230</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_deprOf">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>300</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_DeprTrans">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>330</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_agregar">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>400</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>+ Agregar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_regresar">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>400</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;- Regresar</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

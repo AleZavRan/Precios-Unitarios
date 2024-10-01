@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CapyProm</class>
+ <widget class="QDialog" name="CapyProm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>652</width>
+    <height>379</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Capacitación Y Promoción</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>111</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1. Capacitación</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>140</y>
+     <width>121</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2. Promoción</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_obr">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>60</y>
+     <width>281</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Obreros (cusros y seminarios, etc)</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_emp">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>100</y>
+     <width>311</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Empleados (cursos y seminarios, etc)</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_celof">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>170</y>
+     <width>211</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Celebraciones oficina</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_regcli">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>200</y>
+     <width>181</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Regalos clientes</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_con">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>230</y>
+     <width>92</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Concursos</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_agui">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>260</y>
+     <width>92</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Aguinaldo</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_honext">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>290</y>
+     <width>211</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Honorarios extraordinarios</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>10</y>
+     <width>111</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Costo Mensual</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>10</y>
+     <width>101</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Costo Anual</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_obr">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>50</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_obrBr">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>50</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_emp">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>100</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_empBr">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>100</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_celof">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>160</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_celofBr">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>160</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_regcli">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>190</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_regcliBr">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>190</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_con">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>220</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_conBr">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>220</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_agui">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>260</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_aguiBr">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>260</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_hon">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>290</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_honBr">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>290</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_regresar">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>340</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;- Regresar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_agregar">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>340</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>+ Agregar</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

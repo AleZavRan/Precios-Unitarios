@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CargosTecyAdmin</class>
+ <widget class="QDialog" name="CargosTecyAdmin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>607</width>
+    <height>401</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Cargos Técnicos y Administrativos</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_agregar">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>320</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>+ Agregar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_regresar">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>320</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;- Regresar</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>21</y>
+     <width>204</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QCheckBox" name="checkBox_al">
+      <property name="text">
+       <string>Asesoría legal</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="checkBox_ae">
+      <property name="text">
+       <string>Asesoría externa</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="checkBox_adp">
+      <property name="text">
+       <string>Ayudante dpto. proyectos</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="checkBox_ddp">
+      <property name="text">
+       <string>Dibujante dpto. proyectos</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="checkBox_jc">
+      <property name="text">
+       <string>Jefe de compras</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="checkBox_c">
+      <property name="text">
+       <string>Contador</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_al">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>33</y>
+     <width>142</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_ae">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>75</y>
+     <width>142</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_adp">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>117</y>
+     <width>142</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_ddp">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>159</y>
+     <width>142</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_jc">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>201</y>
+     <width>142</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_c">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>243</y>
+     <width>142</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_al">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>37</y>
+     <width>100</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Costo Mensual</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_ae">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>80</y>
+     <width>100</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Costo Mensual</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_adp">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>122</y>
+     <width>100</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Costo Mensual</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_ddp">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>165</y>
+     <width>100</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Costo Mensual</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_jc">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>207</y>
+     <width>100</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Costo Mensual</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_c">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>250</y>
+     <width>100</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Costo Mensual</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

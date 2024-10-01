@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ConsumosVarios</class>
+ <widget class="QDialog" name="ConsumosVarios">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>453</width>
+    <height>392</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>20</y>
+     <width>101</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Monto Bruto</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxconselec">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>50</y>
+     <width>151</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Consumo eléctrico</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_consagua">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>100</y>
+     <width>141</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Consumo agua</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_eqofdepr">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>150</y>
+     <width>141</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Eq. Oficina Depr.</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_foto">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>200</y>
+     <width>92</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Fotografía</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_papeleria">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>250</y>
+     <width>151</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Papelería y copias</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_varios">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>300</y>
+     <width>92</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Varios</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_agregar">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>340</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>+ Agregar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_regresar">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>340</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;- Regresar</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_conselect">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>50</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_consagua">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>100</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_eqofdepr">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>150</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_foto">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>200</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_papeleria">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>250</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_varios">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>300</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

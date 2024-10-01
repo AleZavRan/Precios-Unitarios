@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Costos</class>
+ <widget class="QDialog" name="Costos">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Costos</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_CostosIndirectos">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>50</y>
+     <width>151</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Costos Indirectos</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_CostosDirectos">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>130</y>
+     <width>151</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Costos Directos</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

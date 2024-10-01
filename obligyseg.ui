@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ObligySeg</class>
+ <widget class="QDialog" name="ObligySeg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>621</width>
+    <height>299</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Obligaciones y Seguros</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>131</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1. Afiliaciones</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>110</y>
+     <width>281</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3. Obligaciones, prestaciones y derechos</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_camara">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>50</y>
+     <width>301</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cámara Nacional Industria Construcción</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_imss">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>150</y>
+     <width>261</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>IMSS, Infonavit, guarderías I.S.R.P.</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>10</y>
+     <width>121</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Monto Mensual</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_camara">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>50</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_agregar">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>230</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>+ Agregar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_regresar">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>230</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;- Regresar</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_imss">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>150</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
