@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -36,6 +36,7 @@ SOURCES += \
     costosindirectos.cpp \
     drenajes.cpp \
     edit.cpp \
+    editcsvview.cpp \
     equipos.cpp \
     estructuras.cpp \
     fianzas.cpp \
@@ -87,6 +88,7 @@ HEADERS += \
     costosindirectos.h \
     drenajes.h \
     edit.h \
+    editcsvview.h \
     equipos.h \
     estructuras.h \
     fianzas.h \
@@ -137,6 +139,7 @@ FORMS += \
     costosindirectos.ui \
     drenajes.ui \
     edit.ui \
+    editcsvview.ui \
     equipos.ui \
     estructuras.ui \
     fianzas.ui \

@@ -1,5 +1,8 @@
 #include "cdpreliminares.h"
 #include "ui_cdpreliminares.h"
+#include <QMessageBox>
+#include <QFile>
+#include <QTextStream>
 
 CDPreliminares::CDPreliminares(QWidget *parent) :
     QDialog(parent),
@@ -67,4 +70,5 @@ void CDPreliminares::on_pushButton_equipos_clicked()
     equipos->show();
 
 }
+
 

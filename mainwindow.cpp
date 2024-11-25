@@ -5,6 +5,8 @@
 #include <QFileDialog>
 #include <QFile>
 #include <QTextStream>
+#include <QtSql/QSqlDatabase>
+#include <QtDebug>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -15,6 +17,8 @@ MainWindow::MainWindow(QWidget *parent)
     int w = ui->label_mainpic->width();
     int h = ui->label_mainpic->height();
     ui->label_mainpic->setPixmap(pic.scaled(w, h, Qt::KeepAspectRatio));
+
+    qDebug() << QSqlDatabase::drivers();  //List of available drivers
 }
 
 MainWindow::~MainWindow()
@@ -47,10 +51,16 @@ void MainWindow::on_actionNew_triggered()
 
 void MainWindow::on_actionEdit_triggered()
 {
-    Edit edit(this);
+
+    edit = new Edit(this);
+    edit->show();
+
+
+
+    /*Edit edit(this);
     edit.setModal(true);
     edit.exec();
-
+    */ // If created in stack
 }
 
 

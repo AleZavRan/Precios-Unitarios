@@ -22,6 +22,8 @@ public:
     explicit CDPreliminares(QWidget *parent = nullptr);
     ~CDPreliminares();
 
+
+
 private slots:
     void on_pushButton_lechadas_clicked();
 
@@ -46,6 +48,7 @@ private:
     Aceros *aceros;
     Cimbras *cimbras;
     Equipos *equipos;
+
 };
 
 #endif // CDPRELIMINARES_H

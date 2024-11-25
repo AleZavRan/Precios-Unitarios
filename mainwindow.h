@@ -2,7 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <costos.h>
+#include "costos.h"
+#include "edit.h"
 
 
 QT_BEGIN_NAMESPACE
@@ -30,6 +31,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     Costos *costos;
+    Edit *edit;
 
 };
 #endif // MAINWINDOW_H
