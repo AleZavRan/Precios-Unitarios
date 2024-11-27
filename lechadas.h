@@ -27,8 +27,8 @@ private:
     float metros2_ = 0;
     float total_ = 0;
 
-    QString concepto_ = "Lechada cemento ";
-    QStringList unidad_ = {"bulto", "m3"};
+    QString concepto_ = "Lechada de ";
+    QStringList unidad_ = {"m3", "bulto"};
     QStringList material_ = {"de agua", "de cemento"};
     float cantidadAgCem_[2] = {0,0};
     float puAgCem_[2] = {0,0};

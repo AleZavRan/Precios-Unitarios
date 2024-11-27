@@ -26,11 +26,13 @@ Lechadas::~Lechadas()
 
 void Lechadas::on_pushButton_agregar_clicked()
 {
+    puAgCem_[0] = AGUA_CONSTRUCCION;
+
     if(ui->comboBox_provedor->currentData() == "Prov 1"){
         if(ui->comboBox_Material->currentData() == "Cemento Blanco"){
 
             puAgCem_[1] = CEMENTO_BLANCO;
-        } else if(ui->comboBox_Material->currentData() == "Cemento gris"){
+        } else if(ui->comboBox_Material->currentData() == "Cemento Gris"){
             puAgCem_[1] = CEMENTO_NORMAL;
         }
 
@@ -96,8 +98,9 @@ void Lechadas::writeTable(QString concepto, QStringList unidad, QStringList mate
     out << cantidadAgCem[1] << unidad[1] << material[1] << cantidadAgCem[1]
         <<","<<puAgCem[1]<<","<<puAgCem[1]*cantidadAgCem[1] <<Qt::endl;
 
-
     out << "TOTAL: "<<puAgCem[1]*cantidadAgCem[1] + puAgCem[0]*cantidadAgCem[0] << Qt::endl;
+
+    out << Qt::endl;    //blank line
 
     file.flush();
     file.close();

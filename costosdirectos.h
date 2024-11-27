@@ -16,6 +16,8 @@
 #define CEMENTO_RR              0
 #define CEMENTO_BLANCO          0
 #define YESO_ENLUCIDOS          0
+#define TEXTUCO                 0
+
 
 //@AGREGADOS
 #define ARENA_MINA              0
