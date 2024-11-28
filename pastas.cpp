@@ -17,8 +17,8 @@ Pastas::Pastas(QWidget *parent) :
     ui->comboBox_Material->addItem("Cemento blanco - agua");
     ui->comboBox_Material->addItem("Yeso - agua");
     ui->comboBox_Material->addItem("Textuco - agua");
-    ui->comboBox_Material->addItem("3 mm");
-    ui->comboBox_Material->addItem("6 mm");
+    ui->comboBox_Material->addItem("3");
+    ui->comboBox_Material->addItem("6");
     ui->lineEdit_propMat3->setHidden(1);
 }
 
@@ -30,10 +30,15 @@ Pastas::~Pastas()
 
 void Pastas::on_pushButton_agregar_clicked()
 {
+    //Assigning values captured from interface to variables
     concepto_ = concepto_ + ui->comboBox_Material->currentData().toString();
     proporcionMat1Mat2_[0] = ui->lineEdit_propMat1->text().toFloat();
     proporcionMat1Mat2_[1] = ui->lineEdit_propMat2->text().toFloat();
     puAgCem_[0] = AGUA_CONSTRUCCION;
+    mmEspesor_ = ui->comboBox_mmEspesor->currentData().toInt();
+    m2_ = ui->lineEdit_metros2->text().toFloat();
+    percWasteWater_ = ui->lineEdit_porcentajeDesperdicioAgua->text().toFloat();
+    percWasteBinder_ = ui->lineEdit_porcentajeDesperdicioAglutin->text().toFloat();
 
     //Assigning unit prices depending on the selected supplier
     //Getting the required amount of materials
@@ -57,7 +62,7 @@ void Pastas::on_pushButton_agregar_clicked()
 
         } else if(ui->comboBox_Material->currentData() == "Textuco - agua"){
             puAgCem_[1] = TEXTUCO;
-            calculaCantidadAguaTextuco(ui->lineEdit_metros2->text().toFloat());
+            calculaCantidadAguaTextuco(m2_, mmEspesor_);
             writeTable(concepto_,proporcionMat1Mat2_, unidad_, material_, cantidadAgTextuco_, puAgCem_);
         }
 
@@ -82,7 +87,7 @@ void Pastas::on_pushButton_agregar_clicked()
 
         } else if(ui->comboBox_Material->currentData() == "Textuco - agua"){
             puAgCem_[1] = TEXTUCO;
-            calculaCantidadAguaTextuco(ui->lineEdit_metros2->text().toFloat());
+            calculaCantidadAguaTextuco(m2_, mmEspesor_);
             writeTable(concepto_,proporcionMat1Mat2_, unidad_, material_, cantidadAgTextuco_, puAgCem_);
         }
 
@@ -106,7 +111,7 @@ void Pastas::on_pushButton_agregar_clicked()
 
         } else if(ui->comboBox_Material->currentData() == "Textuco - agua"){
             puAgCem_[1] = TEXTUCO;
-            calculaCantidadAguaTextuco(ui->lineEdit_metros2->text().toFloat());
+            calculaCantidadAguaTextuco(m2_, mmEspesor_);
             writeTable(concepto_,proporcionMat1Mat2_, unidad_, material_, cantidadAgTextuco_, puAgCem_);
         }
     }
@@ -132,14 +137,53 @@ float* Pastas::getCantidadAguaCemento(float m2){
 
     return cantidadAgCem;
 }
-void Pastas::calculaCantidadAguaYeso(float m2){
-    cantidadAgYeso_[0] = m2*1;
-    cantidadAgYeso_[1] = m2*1;
+void Pastas::calculaCantidadAguaYeso(float m2, int mmEspesor, float percWasteWater, float percWasteBinder){
+
+    float kilosBulto = 40; //Using 40kg bags
+    float rendiM2 = 6;  // production in m2 per rendiKilos
+    float rendiKilos = 40; // amount of binder required per rendiM2 m2
+    float propAgua = 1; // ratio of water (in lts.) per 1 kg of textuco
+
+    if (mmEspesor == 3){
+        rendiM2 = 6;
+
+        cantidadAgYeso_[1] = ((rendiKilos/rendiM2)/(kilosBulto))*(m2); //amount of bags required
+
+    } else if (mmEspesor == 6){
+        rendiM2 = 3;
+
+        cantidadAgYeso_[1] = ((rendiKilos/rendiM2)/(kilosBulto))*(m2); //amount of bags required
+    }
+    cantidadAgYeso_[0] = (cantidadAgYeso_[1])*(kilosBulto)*(propAgua); //liters of water required
+
+    //Adding percentage of waste
+    cantidadAgYeso_[0] = cantidadAgYeso_[0] + ((cantidadAgYeso_[0])*(percWasteWater/100));
+    cantidadAgYeso_[1] = cantidadAgYeso_[1] + ((cantidadAgYeso_[1])*(percWasteBinder/100));
+
 
 }
-void Pastas::calculaCantidadAguaTextuco(float m2){
-    cantidadAgTextuco_[0] = m2*1;
-    cantidadAgTextuco_[1] = m2*1;
+void Pastas::calculaCantidadAguaTextuco(float m2, int mmEspesor, float percWasteWater, float percWasteBinder){
+
+    float kilosBulto = 20; //Using 20kg bags
+    float rendiM2 = 13;  // production in m2 per rendiKilos
+    float rendiKilos = 20; // amount of binder required per rendiM2 m2
+    float propAgua = 0.25; // ratio of water (in lts.) per 1 kg of textuco
+
+    if (mmEspesor == 3){
+        rendiM2 = 13;
+
+        cantidadAgTextuco_[1] = ((rendiKilos/rendiM2)/(kilosBulto))*(m2); //amount of bags required
+
+    } else if (mmEspesor == 6){
+        rendiM2 = 3.5;
+
+        cantidadAgTextuco_[1] = ((rendiKilos/rendiM2)/(kilosBulto))*(m2); //amount of bags required
+    }
+    cantidadAgTextuco_[0] = (cantidadAgTextuco_[1])*(kilosBulto)*(propAgua); //liters of water required
+
+    //Adding percentage of waste
+    cantidadAgTextuco_[0] = cantidadAgTextuco_[0] + ((cantidadAgTextuco_[0])*(percWasteWater/100));
+    cantidadAgTextuco_[1] = cantidadAgTextuco_[1] + ((cantidadAgTextuco_[1])*(percWasteBinder/100));
 
 }
 void Pastas::writeTable(QString concepto, int proporcionMat1Mat2[], QStringList unidad, QStringList material, float cantidadAgCem[], float puAgCem[]){

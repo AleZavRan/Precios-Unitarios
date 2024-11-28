@@ -25,17 +25,20 @@ private:
     Ui::Pastas *ui;
 
     QString concepto_ = "Pasta de";
-    QStringList unidad_ = {"m3", "bulto", "bulto"};
+    QStringList unidad_ = {"m3", "bulto 20kg", "bulto 20kg"};
     QStringList material_ = {"de agua", "de cemento"};
     float* cantidadAgCem_ = new float[2]; //Declared in this way for practicing heap memory allocation
     float cantidadAgYeso_[2] = {0,0};
     float cantidadAgTextuco_[2] = {0,0};
     float puAgCem_[2] = {0,0};           //Unit prices water - binder
     int proporcionMat1Mat2_[2] = {0,0};
+    int mmEspesor_ = 0;
+    float m2_ = 0;
+    float percWasteWater_ = 0; //Percentage of water waste
+    float percWasteBinder_ = 0; //Percentage of binder waste
 
-
-    void calculaCantidadAguaYeso(float m2);
-    void calculaCantidadAguaTextuco(float m2);
+    void calculaCantidadAguaYeso(float m2, int mmEspesor, float percWasteWater, float percWasteBinder);
+    void calculaCantidadAguaTextuco(float m2, int mmEspesor, float percWasteWater, float percWasteBinder);
 };
 
 #endif // PASTAS_H

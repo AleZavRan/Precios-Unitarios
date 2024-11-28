@@ -59,7 +59,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>+ Agregar Lechada</string>
+    <string>+ Agregar Pasta</string>
    </property>
   </widget>
   <widget class="QComboBox" name="comboBox_provedor">
@@ -82,7 +82,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Provedor</string>
+    <string>Proveedor</string>
    </property>
   </widget>
   <widget class="QComboBox" name="comboBox_Material">
@@ -187,14 +187,14 @@
     </rect>
    </property>
    <property name="text">
-    <string>Porcentaje de desperdicio</string>
+    <string>% de desperdicio de agua</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_8">
    <property name="geometry">
     <rect>
      <x>380</x>
-     <y>200</y>
+     <y>240</y>
      <width>131</width>
      <height>17</height>
     </rect>
@@ -203,7 +203,7 @@
     <string>mm. de espesor</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_porcentajeDesperdicio">
+  <widget class="QLineEdit" name="lineEdit_porcentajeDesperdicioAgua">
    <property name="geometry">
     <rect>
      <x>380</x>
@@ -217,8 +217,31 @@
    <property name="geometry">
     <rect>
      <x>380</x>
-     <y>240</y>
+     <y>270</y>
      <width>86</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>170</y>
+     <width>221</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>% de desperdicio de aglutinante</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_porcentajeDesperdicioAglutin">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>200</y>
+     <width>113</width>
      <height>25</height>
     </rect>
    </property>

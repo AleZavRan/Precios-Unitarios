@@ -16,7 +16,7 @@
   <widget class="QPushButton" name="pushButton_agregar">
    <property name="geometry">
     <rect>
-     <x>190</x>
+     <x>300</x>
      <y>240</y>
      <width>171</width>
      <height>25</height>
@@ -29,7 +29,7 @@
   <widget class="QPushButton" name="pushButton_regresar">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>20</x>
      <y>240</y>
      <width>89</width>
      <height>25</height>
@@ -59,7 +59,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Provedor</string>
+    <string>Proveedor</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
