@@ -12,3 +12,9 @@ Morteros::~Morteros()
 {
     delete ui;
 }
+
+void Morteros::on_pushButton_agregar_clicked()
+{
+
+}
+

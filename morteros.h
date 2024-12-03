@@ -15,6 +15,9 @@ public:
     explicit Morteros(QWidget *parent = nullptr);
     ~Morteros();
 
+private slots:
+    void on_pushButton_agregar_clicked();
+
 private:
     Ui::Morteros *ui;
 };

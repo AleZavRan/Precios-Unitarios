@@ -48,22 +48,22 @@ void Pastas::on_pushButton_agregar_clicked()
         if(ui->comboBox_Material->currentData() == "Cemento gris - agua"){
             puAgCem_[1] = CEMENTO_BLANCO;
             cantidadAgCem_ = getCantidadAguaCemento(ui->lineEdit_metros2->text().toFloat());
-            writeTable(concepto_,proporcionMat1Mat2_, unidad_, material_, cantidadAgCem_, puAgCem_);
+            writeTable(concepto_, unidad_, material_, cantidadAgCem_, puAgCem_);
 
         } else if(ui->comboBox_Material->currentData() == "Cemento blanco - agua"){
             puAgCem_[1] = CEMENTO_NORMAL;
             cantidadAgCem_ = getCantidadAguaCemento(ui->lineEdit_metros2->text().toFloat());
-            writeTable(concepto_,proporcionMat1Mat2_, unidad_, material_, cantidadAgCem_, puAgCem_);
+            writeTable(concepto_, unidad_, material_, cantidadAgCem_, puAgCem_);
 
         } else if(ui->comboBox_Material->currentData() == "Yeso - agua"){
             puAgCem_[1] = YESO_ENLUCIDOS;
-            calculaCantidadAguaYeso(ui->lineEdit_metros2->text().toFloat());
-            writeTable(concepto_,proporcionMat1Mat2_, unidad_, material_, cantidadAgYeso_, puAgCem_);
+            calculaCantidadAguaYeso(ui->lineEdit_metros2->text().toFloat(), mmEspesor_, percWasteWater_, percWasteBinder_);
+            writeTable(concepto_, unidad_, material_, cantidadAgYeso_, puAgCem_);
 
         } else if(ui->comboBox_Material->currentData() == "Textuco - agua"){
             puAgCem_[1] = TEXTUCO;
-            calculaCantidadAguaTextuco(m2_, mmEspesor_);
-            writeTable(concepto_,proporcionMat1Mat2_, unidad_, material_, cantidadAgTextuco_, puAgCem_);
+            calculaCantidadAguaTextuco(m2_, mmEspesor_, percWasteWater_, percWasteBinder_);
+            writeTable(concepto_, unidad_, material_, cantidadAgTextuco_, puAgCem_);
         }
 
 
@@ -72,23 +72,23 @@ void Pastas::on_pushButton_agregar_clicked()
         if(ui->comboBox_Material->currentData() == "Cemento gris - agua"){
             puAgCem_[1] = CEMENTO_BLANCO;
             cantidadAgCem_ = getCantidadAguaCemento(ui->lineEdit_metros2->text().toFloat());
-            writeTable(concepto_,proporcionMat1Mat2_, unidad_, material_, cantidadAgCem_, puAgCem_);
+            writeTable(concepto_, unidad_, material_, cantidadAgCem_, puAgCem_);
 
         } else if(ui->comboBox_Material->currentData() == "Cemento blanco - agua"){
             puAgCem_[1] = CEMENTO_NORMAL;
             cantidadAgCem_ = getCantidadAguaCemento(ui->lineEdit_metros2->text().toFloat());
-            writeTable(concepto_,proporcionMat1Mat2_, unidad_, material_, cantidadAgCem_, puAgCem_);
+            writeTable(concepto_, unidad_, material_, cantidadAgCem_, puAgCem_);
 
         } else if(ui->comboBox_Material->currentData() == "Yeso - agua"){
             puAgCem_[1] = YESO_ENLUCIDOS;
-            calculaCantidadAguaYeso(ui->lineEdit_metros2->text().toFloat());
-            writeTable(concepto_,proporcionMat1Mat2_, unidad_, material_, cantidadAgYeso_, puAgCem_);
+            calculaCantidadAguaYeso(ui->lineEdit_metros2->text().toFloat(), mmEspesor_, percWasteWater_, percWasteBinder_);
+            writeTable(concepto_, unidad_, material_, cantidadAgYeso_, puAgCem_);
 
 
         } else if(ui->comboBox_Material->currentData() == "Textuco - agua"){
             puAgCem_[1] = TEXTUCO;
-            calculaCantidadAguaTextuco(m2_, mmEspesor_);
-            writeTable(concepto_,proporcionMat1Mat2_, unidad_, material_, cantidadAgTextuco_, puAgCem_);
+            calculaCantidadAguaTextuco(m2_, mmEspesor_, percWasteWater_, percWasteBinder_);
+            writeTable(concepto_, unidad_, material_, cantidadAgTextuco_, puAgCem_);
         }
 
 
@@ -97,22 +97,22 @@ void Pastas::on_pushButton_agregar_clicked()
         if(ui->comboBox_Material->currentData() == "Cemento gris - agua"){
             puAgCem_[1] = CEMENTO_BLANCO;
             cantidadAgCem_ = getCantidadAguaCemento(ui->lineEdit_metros2->text().toFloat());
-            writeTable(concepto_,proporcionMat1Mat2_, unidad_, material_, cantidadAgCem_, puAgCem_);
+            writeTable(concepto_, unidad_, material_, cantidadAgCem_, puAgCem_);
 
         } else if(ui->comboBox_Material->currentData() == "Cemento blanco - agua"){
             puAgCem_[1] = CEMENTO_NORMAL;
             cantidadAgCem_ = getCantidadAguaCemento(ui->lineEdit_metros2->text().toFloat());
-            writeTable(concepto_,proporcionMat1Mat2_, unidad_, material_, cantidadAgCem_, puAgCem_);
+            writeTable(concepto_, unidad_, material_, cantidadAgCem_, puAgCem_);
 
         } else if(ui->comboBox_Material->currentData() == "Yeso - agua"){
             puAgCem_[1] = YESO_ENLUCIDOS;
-            calculaCantidadAguaYeso(ui->lineEdit_metros2->text().toFloat());
-            writeTable(concepto_,proporcionMat1Mat2_, unidad_, material_, cantidadAgYeso_, puAgCem_);
+            calculaCantidadAguaYeso(ui->lineEdit_metros2->text().toFloat(), mmEspesor_, percWasteWater_, percWasteBinder_);
+            writeTable(concepto_, unidad_, material_, cantidadAgYeso_, puAgCem_);
 
         } else if(ui->comboBox_Material->currentData() == "Textuco - agua"){
             puAgCem_[1] = TEXTUCO;
-            calculaCantidadAguaTextuco(m2_, mmEspesor_);
-            writeTable(concepto_,proporcionMat1Mat2_, unidad_, material_, cantidadAgTextuco_, puAgCem_);
+            calculaCantidadAguaTextuco(m2_, mmEspesor_, percWasteWater_, percWasteBinder_);
+            writeTable(concepto_, unidad_, material_, cantidadAgTextuco_, puAgCem_);
         }
     }
 
@@ -186,7 +186,7 @@ void Pastas::calculaCantidadAguaTextuco(float m2, int mmEspesor, float percWaste
     cantidadAgTextuco_[1] = cantidadAgTextuco_[1] + ((cantidadAgTextuco_[1])*(percWasteBinder/100));
 
 }
-void Pastas::writeTable(QString concepto, int proporcionMat1Mat2[], QStringList unidad, QStringList material, float cantidadAgCem[], float puAgCem[]){
+void Pastas::writeTable(QString concepto, QStringList unidad, QStringList material, float cantidadAgCem[], float puAgCem[]){
 
     QFile file("/home/jano/Documents/QtApps/Tutorials/prueba1.csv");
 

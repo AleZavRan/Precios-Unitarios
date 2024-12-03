@@ -15,7 +15,7 @@ public:
     explicit Pastas(QWidget *parent = nullptr);
     ~Pastas();
     float* getCantidadAguaCemento(float m2);
-    void writeTable(QString concepto, int proporcionMat1Mat2[], QStringList unidad, QStringList material, float cantidadAgCem[], float puAgCem[]);
+    void writeTable(QString concepto, QStringList unidad, QStringList material, float cantidadAgCem[], float puAgCem[]);
 
 private slots:
     void on_pushButton_agregar_clicked();

@@ -14,12 +14,13 @@ class Concretos : public QDialog
 public:
     explicit Concretos(QWidget *parent = nullptr);
     ~Concretos();
-    void writeTable(QString concepto, int proporcionMat1Mat2[], QStringList unidad, QStringList material, float cantidadAgCem[], float puAgCem[]);
+    void writeTable(QString concepto, QStringList unidad, QStringList material, float cantidadAgArGrCem[], float puAgArGrCem[]);
 
 private slots:
     void on_pushButton_agregar_clicked();
 
     void on_pushButton_regresar_clicked();
+
 
 private:
     Ui::Concretos *ui;
@@ -30,10 +31,10 @@ private:
     float cantidadAgArGrCem_[4] = {0,0,0,0}; //Amount of water, sand, gravel, cement
     float puAgArGrCem_[4] = {0,0,0,0};           //Unit prices of water, sand, gravel, cement
     float m3_ = 0;
-    float percWasteWater_ = 0; //Percentage of water waste
     float percWasteBlend_ = 0; //Percentage of blend waste
+    QString tipoDeMezcla_ = "";
 
-    void calculaCantidadAgArGrCem(float m3, float percWasteWater, float percWasteBlend);
+    void calculaCantidadAgArGrCem(float m3, float percWasteBlend, QString tipoDeMezcla);
 };
 
 #endif // CONCRETOS_H
