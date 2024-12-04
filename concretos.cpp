@@ -33,6 +33,7 @@ void Concretos::on_pushButton_agregar_clicked()
     m3_ = ui->lineEdit_metros3->text().toFloat();
     percWasteBlend_ = ui->lineEdit_porcentajeDesperdicioMezcla->text().toFloat();
     tipoDeMezcla_ = ui->comboBox_tipoDeMezcla->currentData().toString();
+    concepto_ += tipoDeMezcla_;
 
     //Assigning unit prices depending on the selected supplier
 
@@ -58,6 +59,7 @@ void Concretos::on_pushButton_agregar_clicked()
     calculaCantidadAgArGrCem(m3_,percWasteBlend_, tipoDeMezcla_);
 
     //Writing the summary table
+    writeTable(concepto_, unidad_, material_, cantidadAgArGrCem_,puAgArGrCem_);
 
 }
 
