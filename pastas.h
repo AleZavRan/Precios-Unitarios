@@ -27,7 +27,7 @@ private:
     QString concepto_ = "Pasta de";
     QStringList unidad_ = {"m3", "bulto 20kg", "bulto 20kg"};
     QStringList material_ = {"de agua", "de cemento"};
-    float* cantidadAgCem_ = new float[2]; //Declared in this way for practicing heap memory allocation
+    float* cantidadAgCem_; //Declared in this way for practicing heap memory allocation
     float cantidadAgYeso_[2] = {0,0};
     float cantidadAgTextuco_[2] = {0,0};
     float puAgCem_[2] = {0,0};           //Unit prices water - binder

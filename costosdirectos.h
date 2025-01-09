@@ -29,13 +29,18 @@
 #define TEZONTLE                0
 
 //@ACEROS
-#define ALAMBRON_1_4                0
-#define ALAMBRE_RECOCIDO_18         0
-#define ACERO_NORMAL_3_8_A_1_1_2    0
-#define ACERO_ALTA_R_5_16_A_3_8     0
-#define ACERO_ALTA_R_1_2_A_1_1_2    0
-#define CLAVO_2_1_2_Y_3_1_2         0
-#define CLAVO_4                     0
+#define ALAMBRON_1_4                    0
+#define ALAMBRE_RECOCIDO_18             0
+#define ACERO_NORMAL_3_8_A_1_1_2        0
+#define ACERO_ALTA_R_5_16_A_3_8         0
+#define ACERO_ALTA_R_1_2_A_1_1_2        0
+#define CLAVO_2_1_2_Y_3_1_2             0
+#define CLAVO_4                         0
+#define REJILLA_ELECTROSOLDADA_10_10    0
+#define REJILLA_ELECTROSOLDADA_12_12    0
+#define ARMEX_10_10                     0
+#define ARMEX_10_16                     0
+#define ARMEX_10_20                     0
 
 //@RENTA DE EQUIPO MAYOR
 #define CAMION_VOLTEO               0
