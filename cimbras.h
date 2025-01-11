@@ -15,6 +15,11 @@ public:
     explicit Cimbras(QWidget *parent = nullptr);
     ~Cimbras();
 
+private slots:
+    void on_pushButton_agregar_clicked();
+
+    void on_pushButton_regresar_clicked();
+
 private:
     Ui::Cimbras *ui;
 };
