@@ -42,17 +42,17 @@ void Morteros::on_pushButton_agregar_clicked()
 
     //Assigning unit prices depending on the selected supplier
 
-    if(ui->comboBox_provedor->currentData() == "Prov 1"){
+    if(ui->comboBox_provedor->currentData().toString() == "Prov 1"){
         puAgArCem_[0] = AGUA_CONSTRUCCION;
         puAgArCem_[1] = ARENA_MINA;
         puAgArCem_[2] = CEMENTO_NORMAL;
 
-    } else if(ui->comboBox_provedor->currentData() == "Prov 2"){
+    } else if(ui->comboBox_provedor->currentData().toString() == "Prov 2"){
         puAgArCem_[0] = AGUA_CONSTRUCCION;
         puAgArCem_[1] = ARENA_MINA;
         puAgArCem_[2] = CEMENTO_NORMAL;
 
-    } else if(ui->comboBox_provedor->currentData() == "Prov 3"){
+    } else if(ui->comboBox_provedor->currentData().toString() == "Prov 3"){
         puAgArCem_[0] = AGUA_CONSTRUCCION;
         puAgArCem_[1] = ARENA_MINA;
         puAgArCem_[2] = CEMENTO_NORMAL;

@@ -37,17 +37,17 @@ void Concretos::on_pushButton_agregar_clicked()
 
     //Assigning unit prices depending on the selected supplier
 
-    if(ui->comboBox_provedor->currentData() == "Prov 1"){
+    if(ui->comboBox_provedor->currentData().toString() == "Prov 1"){
         puAgArGrCem_[0] = AGUA_CONSTRUCCION;
         puAgArGrCem_[1] = ARENA_MINA;
         puAgArGrCem_[2] = GRAVA_MINA;
         puAgArGrCem_[3] = CEMENTO_NORMAL;
-    } else if(ui->comboBox_provedor->currentData() == "Prov 2"){
+    } else if(ui->comboBox_provedor->currentData().toString() == "Prov 2"){
         puAgArGrCem_[0] = AGUA_CONSTRUCCION;
         puAgArGrCem_[1] = ARENA_MINA;
         puAgArGrCem_[2] = GRAVA_MINA;
         puAgArGrCem_[3] = CEMENTO_NORMAL;
-    } else if(ui->comboBox_provedor->currentData() == "Prov 3"){
+    } else if(ui->comboBox_provedor->currentData().toString() == "Prov 3"){
         puAgArGrCem_[0] = AGUA_CONSTRUCCION;
         puAgArGrCem_[1] = ARENA_MINA;
         puAgArGrCem_[2] = GRAVA_MINA;

@@ -43,7 +43,7 @@ void Pastas::on_pushButton_agregar_clicked()
     //Assigning unit prices depending on the selected supplier
     //Getting the required amount of materials
     //Writing the summary table
-    if(ui->comboBox_provedor->currentData() == "Prov 1"){
+    if(ui->comboBox_provedor->currentData().toString() == "Prov 1"){
 
         if(ui->comboBox_Material->currentData() == "Cemento gris - agua"){
             puAgCem_[1] = CEMENTO_BLANCO;
@@ -67,7 +67,7 @@ void Pastas::on_pushButton_agregar_clicked()
         }
 
 
-    } else if(ui->comboBox_provedor->currentData() == "Prov 2"){
+    } else if(ui->comboBox_provedor->currentData().toString() == "Prov 2"){
 
         if(ui->comboBox_Material->currentData() == "Cemento gris - agua"){
             puAgCem_[1] = CEMENTO_BLANCO;
@@ -92,7 +92,7 @@ void Pastas::on_pushButton_agregar_clicked()
         }
 
 
-    } else if(ui->comboBox_provedor->currentData() == "Prov 3"){
+    } else if(ui->comboBox_provedor->currentData().toString() == "Prov 3"){
 
         if(ui->comboBox_Material->currentData() == "Cemento gris - agua"){
             puAgCem_[1] = CEMENTO_BLANCO;

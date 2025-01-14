@@ -28,7 +28,7 @@ void Lechadas::on_pushButton_agregar_clicked()
 {
     puAgCem_[0] = AGUA_CONSTRUCCION;
 
-    if(ui->comboBox_provedor->currentData() == "Prov 1"){
+    if(ui->comboBox_provedor->currentData().toString() == "Prov 1"){
         if(ui->comboBox_Material->currentData() == "Cemento Blanco"){
 
             puAgCem_[1] = CEMENTO_BLANCO;
@@ -37,7 +37,7 @@ void Lechadas::on_pushButton_agregar_clicked()
         }
 
 
-    } else if(ui->comboBox_provedor->currentData() == "Prov 2"){
+    } else if(ui->comboBox_provedor->currentData().toString() == "Prov 2"){
         if(ui->comboBox_Material->currentData() == "Cemento Blanco"){
 
             puAgCem_[1] = CEMENTO_BLANCO;
@@ -46,7 +46,7 @@ void Lechadas::on_pushButton_agregar_clicked()
         }
 
     } else {
-        if(ui->comboBox_Material->currentData() == "Cemento Blanco"){
+        if(ui->comboBox_Material->currentData().toString() == "Cemento Blanco"){
 
             puAgCem_[1] = CEMENTO_BLANCO;
         } else if(ui->comboBox_Material->currentData() == "Cemento gris"){
