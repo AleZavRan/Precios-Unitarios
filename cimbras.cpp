@@ -32,7 +32,18 @@ Cimbras::~Cimbras()
 
 void Cimbras::on_pushButton_agregar_clicked()
 {
+    //Assigning values captured from interface to variables
+    mTrabes_ = ui->lineEdit_trabes->text().toFloat();       //Lineal meters captured
+    mCastillos_ = ui->lineEdit_castillos->text().toFloat();
+    mDalas_ = ui->lineEdit_dalas->text().toFloat();
+    mLosas_ = ui->lineEdit_losas->text().toFloat();
+    mZapatas_ = ui->lineEdit_zapatas->text().toFloat();
 
+    //Assigning unit prices depending on the selected supplier
+
+    //Getting the required amount of materials depending type of configuration
+
+    //Writing the summary table
 }
 
 
@@ -42,3 +53,6 @@ void Cimbras::on_pushButton_regresar_clicked()
 
 }
 
+void Cimbras::writeTable(QString concepto, QStringList unidad, QStringList material){
+
+}
