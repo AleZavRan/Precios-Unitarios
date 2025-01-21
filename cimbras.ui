@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>642</width>
-    <height>455</height>
+    <height>465</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -27,7 +27,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>270</y>
+     <y>310</y>
      <width>67</width>
      <height>16</height>
     </rect>
@@ -50,7 +50,7 @@
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>210</y>
+     <y>250</y>
      <width>131</width>
      <height>25</height>
     </rect>
@@ -67,16 +67,6 @@
    </property>
    <property name="text">
     <string>Castillos</string>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="comboBox_losas">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>270</y>
-     <width>131</width>
-     <height>25</height>
-    </rect>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">
@@ -109,7 +99,7 @@
    <property name="geometry">
     <rect>
      <x>340</x>
-     <y>210</y>
+     <y>250</y>
      <width>113</width>
      <height>25</height>
     </rect>
@@ -165,7 +155,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>210</y>
+     <y>250</y>
      <width>67</width>
      <height>16</height>
     </rect>
@@ -178,7 +168,7 @@
    <property name="geometry">
     <rect>
      <x>340</x>
-     <y>270</y>
+     <y>310</y>
      <width>113</width>
      <height>25</height>
     </rect>
@@ -188,7 +178,7 @@
    <property name="geometry">
     <rect>
      <x>340</x>
-     <y>400</y>
+     <y>430</y>
      <width>89</width>
      <height>25</height>
     </rect>
@@ -201,7 +191,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>330</y>
+     <y>370</y>
      <width>67</width>
      <height>16</height>
     </rect>
@@ -234,7 +224,7 @@
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>330</y>
+     <y>370</y>
      <width>131</width>
      <height>25</height>
     </rect>
@@ -257,7 +247,7 @@
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>400</y>
+     <y>430</y>
      <width>89</width>
      <height>25</height>
     </rect>
@@ -270,8 +260,80 @@
    <property name="geometry">
     <rect>
      <x>340</x>
-     <y>330</y>
+     <y>370</y>
      <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_tabla">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>300</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tabla 3/4x8</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_tablon">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>330</y>
+     <width>121</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tablón 2x10x8</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_tarima">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>330</y>
+     <width>92</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tarima</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_cadenas">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>200</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>200</y>
+     <width>67</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cadenas</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_cadenas">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>200</y>
+     <width>131</width>
      <height>25</height>
     </rect>
    </property>
