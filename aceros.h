@@ -30,6 +30,7 @@ private:
     QString tipoArmadoPisos_ = "";  //Configuration selected on interface
     QString tipoArmadoTrabes_ = "";
     QString tipoArmadoCastillos_ = "";
+    QString tipoArmadoCadenas_ = "";
     QString tipoArmadoDalas_ = "";
     QString tipoArmadoLosas_ = "";
     QString tipoArmadoZapatas_ = "";
@@ -37,6 +38,7 @@ private:
     float cantidadArmexCastillos_ = 0;           //Amount of Armex for castles
     float* cantidadVarillaAlambronTrabes_ = nullptr;
     float* cantidadVarillaAlambronCastillos_ = nullptr;
+    float* cantidadVarillaAlambronCadenas_ = nullptr;
     float* cantidadVarillaAlambronDalas_ = nullptr;
     float* cantidadVarillaAlambronLosas_ = nullptr;
     float* cantidadVarillaAlambronZapatas_ = nullptr;
@@ -49,11 +51,12 @@ private:
     float mPisos_ = 0;              //Lineal meters
     float mTrabes_ = 0;
     float mCastillos_ = 0;
+    float mCadenas_ = 0;
     float mDalas_ = 0;
     float mLosas_ = 0;
     float mZapatas_ = 0;
     float percWaste_ = 0;                            //Percentage of waste of rod and wire rod
-    QStringList tipoDeEstructura_ = {"para Pisos", "para Trabes", "para Castillos",
+    QStringList tipoDeEstructura_ = {"para Pisos", "para Trabes", "para Castillos", "para Cadenas",
                                      "para Dalas", "para Losas", "para Zapatas"}; //Use of rod and wire rod
 
     float* calculaCantidadVarillaAlambron(float m, float percWaste, QString tipoDeArmado);

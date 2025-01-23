@@ -24,6 +24,9 @@ Aceros::Aceros(QWidget *parent) :
     ui->comboBox_castillos->addItem("Armex 10 x 10");
     ui->comboBox_castillos->addItem("Armex 10 x 16");
     ui->comboBox_castillos->addItem("Armex 10 x 20");
+    ui->comboBox_cadenas->addItem("10 x 10");
+    ui->comboBox_cadenas->addItem("10 x 16");
+    ui->comboBox_cadenas->addItem("10 x 20");
     ui->comboBox_dalas->addItem("10 x 10");
     ui->comboBox_dalas->addItem("10 x 16");
     ui->comboBox_dalas->addItem("10 x 20");
@@ -45,12 +48,14 @@ void Aceros::on_pushButton_agregar_clicked()
     mPisos_ = ui->lineEdit_pisos->text().toFloat();     //Lineal meters captured
     mTrabes_ = ui->lineEdit_trabes->text().toFloat();
     mCastillos_ = ui->lineEdit_castillos->text().toFloat();
+    mCadenas_ = ui->lineEdit_cadenas->text().toFloat();
     mDalas_ = ui->lineEdit_dalas->text().toFloat();
     mLosas_ = ui->lineEdit_losas->text().toFloat();
     mZapatas_ = ui->lineEdit_zapatas->text().toFloat();
     tipoArmadoPisos_ = ui->comboBox_pisos->currentData().toString();    //Configurations selected
     tipoArmadoTrabes_ = ui->comboBox_trabes->currentData().toString();
     tipoArmadoCastillos_ = ui->comboBox_castillos->currentData().toString();
+    tipoArmadoCadenas_ = ui->comboBox_cadenas->currentData().toString();
     tipoArmadoDalas_ = ui->comboBox_dalas->currentData().toString();
     tipoArmadoLosas_ = ui->comboBox_losas->currentData().toString();
     tipoArmadoZapatas_ = ui->comboBox_zapatas->currentData().toString();
@@ -88,6 +93,7 @@ void Aceros::on_pushButton_agregar_clicked()
         cantidadArmexCastillos_ = calculaCantidadArmex(mCastillos_, percWaste_);
     }
 
+    cantidadVarillaAlambronCadenas_ = calculaCantidadVarillaAlambron(mCadenas_, percWaste_, tipoArmadoCadenas_);
     cantidadVarillaAlambronDalas_ = calculaCantidadVarillaAlambron(mDalas_, percWaste_, tipoArmadoDalas_);
     cantidadVarillaAlambronLosas_ = calculaCantidadVarillaAlambron(mLosas_, percWaste_, tipoArmadoLosas_);
     cantidadVarillaAlambronZapatas_ = calculaCantidadVarillaAlambron(mZapatas_, percWaste_, tipoArmadoZapatas_);
@@ -100,6 +106,8 @@ void Aceros::on_pushButton_agregar_clicked()
     cantidadVarillaAlambronTrabes_ = nullptr;
     delete[] cantidadVarillaAlambronCastillos_;
     cantidadVarillaAlambronCastillos_ = nullptr;
+    delete[] cantidadVarillaAlambronCadenas_;
+    cantidadVarillaAlambronCadenas_ = nullptr;
     delete[] cantidadVarillaAlambronDalas_;
     cantidadVarillaAlambronDalas_ = nullptr;
     delete[] cantidadVarillaAlambronLosas_;
@@ -229,6 +237,9 @@ void Aceros::writeTable(QString concepto, QStringList unidad, QStringList materi
             <<","<<puArmex10x20_<<","<<puArmex10x20_*cantidadArmexCastillos_ <<Qt::endl;
 
     }
+    //Cadenas
+    out << cantidadVarillaAlambronCadenas_[0] << unidad[1] << material[1] <<"," <<unidad[1] <<"," << cantidadVarillaAlambronCadenas_[0]
+        <<","<<puVarillaAlambron_[0]<<","<<puVarillaAlambron_[0]*cantidadVarillaAlambronCadenas_[0] <<Qt::endl;
 
     //Dalas
     out << cantidadVarillaAlambronDalas_[0] << unidad[1] << material[1] <<"," <<unidad[1] <<"," << cantidadVarillaAlambronDalas_[0]
